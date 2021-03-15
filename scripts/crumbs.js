@@ -3,8 +3,8 @@ $( document ).ready(function crumbs() {
 	var contents = route.includes("index.html");
 	
 	if (contents) {
-	  $("#route").text("Se encuentra en INICIO");
-	} else {
 	  $("#route").text("Se encuentra en ACTUALIDAD");
+	} else {
+	  $("#route").text("Se encuentra en INICIO");
 	}
 });
