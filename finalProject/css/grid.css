@@ -1,0 +1,72 @@
+/*======================================
+* Author        : "Noemi_Ortega_Córdoba"
+======================================*/
+
+/*===========TABLE OF CONTENTS==========
+1.  General css
+3. 	Nav
+4.  Header
+5.  Collaborations
+6.  Aside
+7.  Footer
+===========*/
+
+/*===============Start================*/
+/*--------------------------------------
+		1.	General css
+--------------------------------------*/
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: auto auto auto auto;
+	text-align:center;
+}
+/*--------------------------------------
+		2.	Nav
+--------------------------------------*/
+.nav {
+	grid-column-start:1;
+	grid-column-end:5;
+	background-color: #333;
+}
+/*--------------------------------------
+		3. 	Header
+--------------------------------------*/
+.exposition {
+	grid-column-start:1;
+	grid-column-end:5;
+	background-color:#D5D8DC;
+	padding:10px 10px;
+}
+/*--------------------------------------
+		4.	Collaborations
+--------------------------------------*/
+.collaborationsa {
+	grid-column-start:1;
+	grid-column-end:3;
+	padding:10px 10px;
+}
+.collaborationsb {
+	grid-column-start:3;
+	grid-column-end:5;
+	padding:10px 10px;
+}
+/*--------------------------------------
+		5.	Contact
+--------------------------------------*/
+.contact {
+	grid-column-start:1;
+	grid-column-end:5;
+	background-color:#E5E8E8;
+	padding:10px 10px;
+}
+/*--------------------------------------
+		6.	Footer
+--------------------------------------*/
+.footer {
+	grid-column-start:1;
+	grid-column-end:5;
+	background-color: #333;
+	padding:10px 10px;
+}
+/*===============End================*/
