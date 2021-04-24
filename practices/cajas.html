@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META TAGS -->
+	<meta charset="utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>	
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />		
+	<meta name="description" content=""/>
+	<meta name="robots" content="index,follow" />
+	<meta name="copyright" content=""/>			
+	<meta name="author" content="Noemi_Ortega_Córdoba, noemiortegacordoba@gmail.com"/>	
+
+	<!-- TITLE OF SITE -->
+	<title>Noemí | Ejemplo div</title>
+		
+	<!-- JQ -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.cajas {
+			display: flex;
+		}
+
+		#a {
+			background-color: blue;
+			height: 100px;
+			width: 33%;
+
+		}
+
+		#b {
+			background-color: red;
+			height: 100px;
+			width: 34%;
+			
+		}
+
+		#c {
+			background-color: green;
+			height: 100px;
+			width: 33%;
+			
+		}
+
+		@media screen and (max-width: 600px) {
+			.cajas {display: block;}
+			#a, #b, #c {width: 100%;}		
+		}
+	</style>
+</head>
+<body>
+	<div class="cajas">
+		<div id="a"></div>
+		<div id="b"></div>
+		<div id="c"></div>		
+	</div>
+</body>
+</html>
