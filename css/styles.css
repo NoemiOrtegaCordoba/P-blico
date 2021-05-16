@@ -122,11 +122,11 @@
 /*--------------------------------------
 		4.	Form
 --------------------------------------*/
-.contact{
+.contact {
 	background-image: url("../images/map.png");
 }
 
-.formulario{
+.formulario {
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 1px solid black;
 	margin: 50px;
