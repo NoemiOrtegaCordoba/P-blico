@@ -23,11 +23,16 @@
 		<link rel="stylesheet" href="css/grid.css"/>
 		<link rel="stylesheet" href="css/responsive.css"/>
 
+		<!-- FILES JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="scripts/nav.js"></script>
+		<script src="scripts/validate.js"></script>
+			
 		<!-- TITLE OF SITE -->
 		<title>Gelem Calé | Asociación</title>
 	</head>
 
-	<body>
+	<body onload="cargarUser()">
 		<div class="grid-container">
 			<div class="nav">
 				<div class="topnav" id="myTopnav">
@@ -74,21 +79,20 @@
 			</div>
 			
 			<div class="footer">
-				<form method="POST" id="ingresar" name="miFormulario" onSubmit="return intentar()">
-					<label for="apellido">Usuario:</label>
-					<input type="text" id="usr" name="formUsuario" required><br>
-					<label for="apellido">Clave:</label>
-					<input type="text" id="clv" name="formClave" required><br>
-					<input type="submit" value="INGRESAR">
+				<form id="login" name="miFormulario" onsubmit="return validarXML()">
+					<label for="usuario">Usuario:</label><br>
+					<input id="input" type="text" name="usuario" maxlength="10" required><br>
+					<label for="usuario">Constraseña:</label><br>
+					<input id="input" type="password" name="pass" maxlength="16" required><br>
+					<input id="input" type="submit" value="Acceder">
 				</form>
-				<button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
-				<button onclick="desconectar()">LIMPIAR MEMORIA</button>
+				<div id="mensajeLogin">
+					<p>Bienvenid@ <span id="aqui"></span></p>
+					<input id="input" type="button" value="Salir"  onclick="borraUsr()">
+				</div>
+				
 				<p style="padding-top:10px">&copy; 2021 Gelem Calé. Todos los derecgos reservados.</p>				
 			</div>
 		</div>
-
-		<!-- FILES JS -->
-		<script src="scripts/nav.js"></script>
-		<script src="scripts/validate.js"></script>
 	</body>
 </html>
