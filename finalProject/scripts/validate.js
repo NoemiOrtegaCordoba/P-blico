@@ -1,5 +1,4 @@
-﻿ 
-function validarXML() {
+﻿ function validarXML() {
 	// lee desde aquí.
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
@@ -7,7 +6,7 @@ function validarXML() {
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", "https://yolandacr.github.io/proyecto-integrador-t3//registrados.xml", true);
+	xhr.open("GET", "https://github.com/NoemiOrtegaCordoba/Publico/blob/main/finalProject/scripts/users.xml", true);
 	xhr.send();
 }
 
@@ -19,14 +18,16 @@ function miFuncion(xml) {
 	var usrNom;
 	var usrPsw;
 	var estado = false;
-	var userLog = document.forms["miFormulario"]["usuario"].value;
-	var passLog = document.forms["miFormulario"]["pass"].value;
+	var userLog = document.getElementById("user").value; 
+	var passLog = document.getElementById("password").value; 
+	
+	if(txtU.includes(userValue)&&txtP.includes(passwordValue)){
 	
 
 	for (i = 0; i < x.length; i++) {
 		// leo las etiquetas que me interesan del objeto
-		usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+		usrNom = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+		usrPsw = x[i].getElementsByTagName("password")[0].childNodes[0].nodeValue;
 
 		if (usrNom == userLog && usrPsw == passLog) {
 			
@@ -34,7 +35,7 @@ function miFuncion(xml) {
 		} 
 	}
 	if (estado == true) {
-		sessionStorage.setItem("nomUsr", document.forms["miFormulario"]["usuario"].value);
+		sessionStorage.setItem("nomUsr", document.getElementById("user").value); 
 	} else {
 		window.alert("La clave o usuario es incorrecta");
 	}
@@ -46,8 +47,6 @@ function cargarUser() {
 		$("#login").css("display", "none");
 		$("#mensajeLogin").css("display", "initial");
 		document.getElementById('aqui').innerHTML = sessionStorage.getItem("nomUsr");
-
-
 	}
 }
 
@@ -56,6 +55,4 @@ function borraUsr() {
 	sessionStorage.removeItem("nomUsr");
 	$("#login").css("display", "block");
 	$("#mensajeLogin").css("display", "none");
-
 }
-

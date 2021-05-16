@@ -1,22 +1,22 @@
 <record>
 	<user nro="1">
 		<name>USR1</name>
-		<password>password1</password>
+		<password>PW1</password>
 	</user>
 	
 	<user nro="2">
 		<name>USR2</name>
-		<password>password2</password>
+		<password>PW2</password>
 	</user>
 	
 	<user nro="3">
 		<name>USR3</name>
-		<password>password3</password>
+		<password>PW3</password>
 	</user>
 	
 	<user nro="4">
 		<name>USR4</name>
-		<password>password4</password>
+		<password>PW4</password>
 	</user>
 	
 	<user nro="5">
