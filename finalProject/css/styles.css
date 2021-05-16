@@ -205,20 +205,13 @@
 /*--------------------------------------
 		4.  Section
 --------------------------------------*/
-/*Form*/
 .formulario__label {
 	display: block;
 	font-weight: 700;
 	padding: 10px;
-	cursor: pointer;
-}
-
-.formulario__grupo-input {
-	position: relative;
 }
 
 .formulario__input {
-	width: 100%;
 	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 3px;
