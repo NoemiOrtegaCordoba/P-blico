@@ -6,7 +6,7 @@
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", "https://github.com/NoemiOrtegaCordoba/Publico/blob/main/finalProject/scripts/registrados.xml", true);
+	xhr.open("GET", "https://github.com/NoemiOrtegaCordoba/Publico/blob/main/finalProject/registrados.xml", true);
 	xhr.send();
 }
 
