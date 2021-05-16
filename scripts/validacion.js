@@ -6,7 +6,7 @@
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", " https://noemiortegacordoba.github.io/Publico//registrados.xml", true);
+	xhr.open("GET", " https://noemiortegacordoba.github.io/Publico/registrados.xml", true);
 	xhr.send();
 }
 
