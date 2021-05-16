@@ -1,5 +1,5 @@
-﻿
-function validarXML() {
+﻿function validarXML() {
+	// lee desde aquí.
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -11,7 +11,6 @@ function validarXML() {
 }
 
 function miFuncion(xml) {
-	
 	var xmlDoc = xml.responseXML;
 	var x = xmlDoc.getElementsByTagName("usuario");
 	var i;
@@ -36,7 +35,6 @@ function miFuncion(xml) {
 	} else {
 		window.alert("La clave o usuario es incorrecta");
 	}
-
 }
 
 function cargarUser() {
@@ -44,8 +42,6 @@ function cargarUser() {
 		$("#login").css("display", "none");
 		$("#mensajeLogin").css("display", "initial");
 		document.getElementById('aqui').innerHTML = sessionStorage.getItem("nomUsr");
-
-
 	}
 }
 
