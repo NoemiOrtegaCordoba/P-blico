@@ -3,7 +3,16 @@
 }
 
 @media only screen and (max-width: 992px) {
-
+	.collaborationsa {
+	grid-column-start:1;
+	grid-column-end:5;
+	padding:10px 10px;
+	}
+	.collaborationsb {
+		grid-column-start:1;
+		grid-column-end:5;
+		padding:10px 10px;
+	}
 }
 
 @media only screen and (max-width: 768px) {

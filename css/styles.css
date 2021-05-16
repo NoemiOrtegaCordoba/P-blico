@@ -122,13 +122,30 @@
 /*--------------------------------------
 		4.	Form
 --------------------------------------*/
+.contact{
+	background-image: url("../images/map.png");
+}
+
+.formulario{
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid black;
+	margin: 50px;
+	padding:20px;
+}
 .formulario__label {
 	display: block;
 	font-weight: 700;
 	padding: 10px;
+	cursor: pointer;
+	color:white;
+}
+
+.formulario__grupo-input {
+	position: relative;
 }
 
 .formulario__input {
+	width: 100%;
 	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 3px;

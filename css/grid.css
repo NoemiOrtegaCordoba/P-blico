@@ -4,11 +4,11 @@
 
 /*===========TABLE OF CONTENTS==========
 1.  General css
-3. 	Nav
-4.  Header
-5.  Collaborations
-6.  Aside
-7.  Footer
+2. 	Nav
+3.  Exposition
+4.  Collaborations
+5.  Contact
+6.  Footer
 ===========*/
 
 /*===============Start================*/
@@ -30,7 +30,7 @@
 	background-color: #333;
 }
 /*--------------------------------------
-		3. 	Header
+		3. 	Exposition
 --------------------------------------*/
 .exposition {
 	grid-column-start:1;
