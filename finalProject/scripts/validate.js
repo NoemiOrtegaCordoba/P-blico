@@ -6,7 +6,7 @@ function validarXML() {
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", "registrados.xml", true);
+	xhr.open("GET", "https://github.com/NoemiOrtegaCordoba/Publico/blob/main/finalProject/scripts/registrados.xml", true);
 	xhr.send();
 }
 
