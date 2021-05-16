@@ -39,18 +39,6 @@
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
-					<a href="#">					  
-						Usuario:
-						<input type="text" id="user" name="user" placeholder="Usuario">
-					</a>
-					<a href="#">					  
-						Contraseña:
-						<input type="text" id="password" name="password" placeholder="Contraseña">
-					</a>
-					<a href="#">	
-						<button type="submit" onclick="myFunction()">Login</button>
-						<input type="submit" value="Login" onclick="myFunction()">
-					</a>
 				</div>
 			</div>
 			
@@ -86,7 +74,16 @@
 			</div>
 			
 			<div class="footer">
-				<p>&copy; 2021 Gelem Calé. Todos los derecgos reservados.</p>				
+				<form method="POST" id="ingresar" name="miFormulario" onSubmit="return intentar()">
+					<label for="apellido">Usuario:</label>
+					<input type="text" id="usr" name="formUsuario" required><br>
+					<label for="apellido">Clave:</label>
+					<input type="text" id="clv" name="formClave" required><br>
+					<input type="submit" value="INGRESAR">
+				</form>
+				<button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
+				<button onclick="desconectar()">LIMPIAR MEMORIA</button>
+				<p style="padding-top:10px">&copy; 2021 Gelem Calé. Todos los derecgos reservados.</p>				
 			</div>
 		</div>
 

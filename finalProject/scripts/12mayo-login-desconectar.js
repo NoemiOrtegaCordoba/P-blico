@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 JavaScript / XML
 web o pagina: ejercicios de XML y JavaScript
 autor: Prof. Carlos Boni
