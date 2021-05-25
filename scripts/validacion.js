@@ -29,7 +29,6 @@ function miFuncion(xml) {
 		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
 
 		if (usrNom == userLog && usrPsw == passLog) {
-			
 			estado = true;
 		} 
 	}
