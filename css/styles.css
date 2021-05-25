@@ -7,7 +7,8 @@
 2. 	Nav
 3. 	Exposition
 4.  Form
-5.  Footer
+5.	Dolly
+6.  Footer
 ===========*/
 
 /*===============Start================*/
@@ -122,15 +123,10 @@
 /*--------------------------------------
 		4.	Form
 --------------------------------------*/
-.contact {
-	background-image: url("../images/map.png");
-}
-
 .formulario {
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 1px solid black;
-	margin: 50px;
-	padding:20px;
+	padding: 40px 20px;
 }
 
 .formulario__label {
@@ -259,7 +255,55 @@
 	border: 3px solid #bb2929;
 }
 /*--------------------------------------
-		5.  Footer
+		5.  Dolly
+--------------------------------------*/
+.cont {
+  width: 1000px;
+  max-width: 1000px;
+  overflow: auto;
+  position: relative;
+  height: 503px;
+}
+
+.cont:hover .background {
+  -webkit-transform: scale(0.8) translate(-50%, -50%);
+      -ms-transform: scale(0.8) translate(-50%, -50%);
+          transform: scale(0.8) translate(-50%, -50%);
+}
+
+.cont:hover .front {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.background {
+  top: 40%;
+  left: 30%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.front {
+	top: 19%;
+	left:20%;
+	z-index: 1;
+	position: absolute;
+	-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+			transform: scale(1);
+	-webkit-transition: -webkit-transform 1s;
+		transition: transform 1s, filter 1s;
+}
+/*--------------------------------------
+		6.  Footer
 --------------------------------------*/
 .footer {
 	color:white;
