@@ -1,8 +1,8 @@
-﻿/* 
+/* 
 JavaScript / XML
 web o pagina: ejercicios de XML y JavaScript
 autor: Prof. Carlos Boni
-fecha: 12 mayo 2021
+fecha: 25 mayo 2021
 resumen: lectura y carga en array bidimensional de un XML
 
 sintesis:
@@ -25,6 +25,7 @@ function controlar(){
 	// 3 - usuario con sesion iniciada
 	$("#ingresar").show();
 	$("#desconectar").hide();
+	for(let timer=1;timer<5000000;timer++);	
 			
 	if (sessionStorage.getItem("usuarioLogueado")) {
 		// estado 3 de nuestro diagrama de estados - con usuario
@@ -41,8 +42,9 @@ function controlar(){
 			// debemos validar si el usuario existe
 			validarXML();
 			// tardo un poco en recargar para dar tiempo a AJAX?
-			for(let timer=1;timer<1000000;timer++);
-			location.reload();
+			for(let timer=1;timer<5000000;timer++);
+			$("#ingresar").hide();
+			$("#desconectar").show();	
 			
 		} else {
 			// estado 1 de nuestro diagrama de estados - sin usuario
@@ -87,7 +89,7 @@ function controlar(){
 				miFuncion(this);
 			}
 		};
-		xhr.open("GET", "https://noemiortegacordoba.github.io/Publico/registrados.xml", true);
+		xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
 		xhr.send();
 	}
 
@@ -116,6 +118,6 @@ function controlar(){
 		sessionStorage.removeItem("usuarioLogueado");
 		sessionStorage.removeItem("usuarioIntentando");
 		sessionStorage.removeItem("claveIntentando");
-		location.reload();
+		window.location.reload();
 	}
 	
