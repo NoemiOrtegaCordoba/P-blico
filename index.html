@@ -29,7 +29,7 @@
 		<title>Gelem Calé | Asociación</title>
 	</head>
 
-	<body onload="controlar()">
+	<body onload="cargarUser()">
 		<div class="grid-container">
 			<div class="nav">
 				<div class="topnav" id="myTopnav">
@@ -39,6 +39,8 @@
 					<a href="html/contact.html">Contáctanos</a>
 					<a href="html/dolly.html">Dolly Zoom</a>
 					<a href="html/ken.html">Ken Burns</a>
+					<a href="html/diagrams.html">Diagramas</a>
+					<a href="html/certificates.html">Certificados</a>
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
@@ -79,15 +81,17 @@
 			</div>
 			
 			<div class="footer">
-				<form method="GET" id="ingresar" name="miFormulario" action="#" onSubmit="return intentar()">
-					<label for="apellido">Usuario:</label>
-					<input type="text" id="usr" name="formUsuario" required><br>
-					<label for="apellido">Clave:</label>
-					<input type="text" id="clv" name="formClave" required><br>
-					<input type="submit" value="INGRESAR">
+				<form id="login" name="miFormulario" onsubmit="return validarXML()">
+					<label for="usuario">Usuario:</label><br>
+					<input id="input" type="text" name="usuario" maxlength="10" required><br>
+					<label for="usuario">Constraseña:</label><br>
+					<input id="input" type="password" name="pass" maxlength="16" required><br>
+					<input id="input" type="submit" value="Acceder">
 				</form>
-				<button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
-				<button onclick="desconectar()">LIMPIAR MEMORIA</button>
+				<div id="mensajeLogin">
+					<p>Bienvenid@ <span id="aqui"></span></p>
+					<input id="boton" type="button" value="Salir" onclick="borraUsr()">
+				</div>
 				
 				<p style="padding-top:10px">&copy; 2021 Gelem Calé. Todos los derechos reservados.</p>				
 			</div>

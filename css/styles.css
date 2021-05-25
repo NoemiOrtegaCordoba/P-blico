@@ -309,12 +309,14 @@
 /*--------------------------------------
 		7.	Login
 --------------------------------------*/
-#contenedor {
-	max-height:100px;
-	max-width:200px;
-	padding: 10px;
-	overflow-x: scroll;
-	overflow-y:hidden;
+#mensajeLogin {
+    display:none;
+}
+
+#input{
+    font-size:1vw;
+    height:50%;
+    padding:2%;
 }
 /*--------------------------------------
 		8.  Footer
