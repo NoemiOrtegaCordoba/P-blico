@@ -344,7 +344,7 @@
 }
 
 .noche {
-  background-image: linear-gradient(to bottom right, black , white);
+  background-image: linear-gradient(to bottom right, white, black);
   color: white;
 }
 
