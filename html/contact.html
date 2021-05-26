@@ -36,6 +36,19 @@
 					<a href="ken.html">Ken Burns</a>
 					<a href="diagrams.html">Diagramas</a>
 					<a href="certificates.html">Certificados</a>
+					<a href="#" disabled>
+						<form id="login" name="miFormulario" onsubmit="return validarXML()">
+							<input id="input" type="text" name="usuario" maxlength="10" placeholder="Usuario" required>
+							<input id="input" type="password" name="pass" maxlength="16" placeholder="Contraseña" required>
+							<input id="input" type="submit" value="Login">
+						</form>
+					</a>
+					<a href="#" disabled>
+						<div id="mensajeLogin">
+							<p><span id="aqui"></span>&nbsp; ¡Gracias por formar parte de Gelem Calé!</p>
+							<input id="boton" type="button" value="Logout" onclick="borraUsr()">
+						</div>
+					</a>
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
@@ -94,20 +107,9 @@
 			</div> 
 	
 			<div class="footer">
-				<form id="login" name="miFormulario" onsubmit="return validarXML()">
-					<label for="usuario">Usuario:</label><br>
-					<input id="input" type="text" name="usuario" maxlength="10" required><br>
-					<label for="usuario">Constraseña:</label><br>
-					<input id="input" type="password" name="pass" maxlength="16" required><br>
-					<input id="input" type="submit" value="Acceder">
-				</form>
-				<div id="mensajeLogin">
-					<p><span id="aqui"></span>&nbsp; ¡Gracias por formar parte de Gelem Calé!</p>
-					<input id="boton" type="button" value="Salir" onclick="borraUsr()">
-					<br>
-				</div>
+				<p>Autor: Noemí Ortega Córdoba</p>				
 				<br>
-				<p style="padding-top:10px">&copy; 2021 Gelem Calé. Todos los derechos reservados.</p>				
+				<p>&copy; 2021 Gelem Calé. Todos los derechos reservados.</p>				
 			</div>
 		</div>
 		
