@@ -321,7 +321,7 @@ h1{
 --------------------------------------*/
 .colors {
   position: fixed;
-  top: 80%;
+  top: 90%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
