@@ -319,3 +319,36 @@
 	color:white;
 }
 /*================End=================*/
+
+.icon-bar {
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+	transition: all 0.3s ease;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 3px 10px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.noche {
+  background-image: linear-gradient(to bottom right, black , white);
+  color: white;
+}
+
+.contraste {
+   background-image: linear-gradient(to bottom right, yellow , black);
+  color: white;
+}
