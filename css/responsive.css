@@ -3,12 +3,12 @@
 }
 
 @media only screen and (max-width: 992px) {
-	.collaborationsa {
+	.a {
 	grid-column-start:1;
 	grid-column-end:5;
 	padding:10px 10px;
 	}
-	.collaborationsb {
+	.b {
 		grid-column-start:1;
 		grid-column-end:5;
 		padding:10px 10px;
