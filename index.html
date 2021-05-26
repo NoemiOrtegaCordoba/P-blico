@@ -36,18 +36,15 @@
 					<a href="html/ken.html">Ken Burns</a>
 					<a href="html/diagrams.html">Diagramas</a>
 					<a href="html/certificates.html">Certificados</a>
-					<a href="#home"><form id="login" name="miFormulario" onsubmit="return validarXML()">
-						
+					<a href="#"><form id="login" name="miFormulario" onsubmit="return validarXML()">
 						<input id="input" type="text" name="usuario" maxlength="10" placeholder="Usuario" required>
-
 						<input id="input" type="password" name="pass" maxlength="16" placeholder="Contraseña" required>
-						<input id="input" type="submit" value="Acceder">
+						<input id="input" type="submit" value="Login">
 					</form></a>
-					<div id="mensajeLogin">
+					<a href="#"><div id="mensajeLogin">
 						<p><span id="aqui"></span>&nbsp; ¡Gracias por formar parte de Gelem Calé!</p>
-						<input id="boton" type="button" value="Salir" onclick="borraUsr()">
-						<br>
-					</div>
+						<input id="boton" type="button" value="Logout" onclick="borraUsr()">
+					</div></a>
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
