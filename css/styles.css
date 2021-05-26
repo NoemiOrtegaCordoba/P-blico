@@ -321,10 +321,11 @@ h1{
 --------------------------------------*/
 .colors {
   position: fixed;
-  top: 90%;
+  top: 80%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index:3;
 }
 
 .colors a {
