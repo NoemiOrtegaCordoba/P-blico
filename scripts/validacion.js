@@ -1,4 +1,3 @@
-
 function validarXML() {
 	// lee desde aquí.
 	var xhr = new XMLHttpRequest();
