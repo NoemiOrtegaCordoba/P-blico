@@ -266,9 +266,7 @@ a {
 		5.  Dolly
 --------------------------------------*/
 .cont {
-  width: 1000px;
-  max-width: 1000px;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   height: 503px;
 }
@@ -287,7 +285,7 @@ a {
 
 .background {
   top: 40%;
-  left: 30%;
+  left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -301,7 +299,7 @@ a {
 
 .front {
 	top: 19%;
-	left:20%;
+	left:33%;
 	z-index: 1;
 	position: absolute;
 	-webkit-transform: scale(1);
