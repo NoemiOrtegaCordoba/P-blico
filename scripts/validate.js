@@ -1,52 +1,52 @@
-function validate() {
+function validarXML() {
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-			Funcion(this);
+			miFuncion(this);
 		}
 	};
 	xhr.open("GET", "https://noemiortegacordoba.github.io/Publico//registrados.xml", true);
 	xhr.send();
 }
 
-function Funcion(xml) {
+function miFuncion(xml) {
 	
 	var xmlDoc = xml.responseXML;
-	var x = xmlDoc.getElementsByTagName("user");
+	var x = xmlDoc.getElementsByTagName("usuario");
 	var i;
-	var userName;
-	var userPassword;
-	var state = false;
-	var userLogin = document.forms["logForm"]["user"].value;
-	var passwordLogin = document.forms["logForm"]["password"].value;
+	var usrNom;
+	var usrPsw;
+	var estado = false;
+	var userLog = document.forms["miFormulario"]["usuario"].value;
+	var passLog = document.forms["miFormulario"]["pass"].value;
 	
 	for (i = 0; i < x.length; i++) {
-		userName = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-		userPassword = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+		usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
 
-		if (userName == userLogin && userPassword == passwordLogin) {
-			state = true;
+		if (usrNom == userLog && usrPsw == passLog) {
+			estado = true;
 		} 
 	}
 	
-	if (state == true) {
-		sessionStorage.setItem("nomUsr", document.forms["logForm"]["user"].value);
+	if (estado == true) {
+		sessionStorage.setItem("nomUsr", document.forms["miFormulario"]["usuario"].value);
 	} else {
 		window.alert("La clave o usuario es incorrecta");
 	}
 }
 
-function loadUser() {
+function cargarUser() {
 	if (sessionStorage.getItem("nomUsr") !== null) {
 		$("#login").css("display", "none");
-		$("#message").css("display", "initial");
-		document.getElementById('detail').innerHTML = sessionStorage.getItem("nomUsr");
+		$("#mensajeLogin").css("display", "initial");
+		document.getElementById('aqui').innerHTML = sessionStorage.getItem("nomUsr");
 	}
 }
 
-function deleteUser() {
+function borraUsr() {
 	sessionStorage.removeItem("nomUsr");
 	$("#login").css("display", "block");
-	$("#message").css("display", "none");
+	$("#mensajeLogin").css("display", "none");
 }
 

@@ -24,7 +24,7 @@
 		<!-- TITLE OF SITE -->
 		<title>Gelem Calé | Asociación</title>
 	</head>
-	<body onload="loadUser()">		
+	<body onload="cargarUser()">
 		<div class="grid-container">
 			<!-- Colors Start -->
 			<div class="colors">
@@ -53,16 +53,16 @@
 					<a href="html/certificates.html">Certificados</a>
 					<!-- Login/Logout Start -->
 					<a href="#" disabled>
-						<form id="login" name="logForm" onsubmit="return validate()">
-							<input type="text" name="user" maxlength="16" placeholder="Usuario" required>
-							<input type="password" name="password" maxlength="16" placeholder="Contraseña" required>
-							<input id="input" type="submit" value="Login">
+						<form id="login" name="miFormulario" onsubmit="return validarXML()">
+							<input type="text" name="usuario" maxlength="10" placeholder="Usuario" required>
+							<input type="password" name="pass" maxlength="16" placeholder="Contraseña" required>
+							<input type="submit" value="Login">
 						</form>
 					</a>
 					<a href="#" disabled>
-						<div id="message">
-							<p>¡Gracias por formar parte de Gelem Calé &nbsp; <span id="detail"></span>!</p>
-							<input type="button" value="Logout" onclick="deleteUser()">
+						<div id="mensajeLogin">
+							<p><span id="aqui"></span>&nbsp; ¡Gracias por formar parte de Gelem Calé!</p>
+							<input id="boton" type="button" value="Logout" onclick="borraUsr()">
 						</div>
 					</a>
 					<!-- Login/Logout End -->
