@@ -1,5 +1,4 @@
 function validarXML() {
-	// lee desde aquí.
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -23,7 +22,6 @@ function miFuncion(xml) {
 	
 
 	for (i = 0; i < x.length; i++) {
-		// leo las etiquetas que me interesan del objeto
 		usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
 		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
 
@@ -39,7 +37,7 @@ function miFuncion(xml) {
 
 }
 
-function cargarUser() {
+function loadUSer() {
 	if (sessionStorage.getItem("nomUsr") !== null) {
 		$("#login").css("display", "none");
 		$("#mensajeLogin").css("display", "initial");
@@ -48,7 +46,6 @@ function cargarUser() {
 }
 
 function borraUsr() {
-	// elimino la variable nomUsr
 	sessionStorage.removeItem("nomUsr");
 	$("#login").css("display", "block");
 	$("#mensajeLogin").css("display", "none");
