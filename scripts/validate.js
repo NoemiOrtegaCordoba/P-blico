@@ -14,22 +14,22 @@ function Funcion(xml) {
 	var xmlDocument = xml.responseXML;
 	var x = xmlDocument.getElementsByTagName("user");
 	var i;
-	var usrNom;
-	var usrPsw;
-	var estado = false;
-	var userLog = document.forms["logForm"]["user"].value;
-	var passLog = document.forms["logForm"]["password"].value;
+	var userName;
+	var userPassword;
+	var state = false;
+	var userLogin = document.forms["logForm"]["user"].value;
+	var passwordLogin = document.forms["logForm"]["password"].value;
 	
 	for (i = 0; i < x.length; i++) {
-		usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+		userName = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+		userPassword = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
 
-		if (usrNom == userLog && usrPsw == passLog) {
-			estado = true;
+		if (userName == userLogin && userPassword == passwordLogin) {
+			state = true;
 		} 
 	}
 	
-	if (estado == true) {
+	if (state == true) {
 		sessionStorage.setItem("nomUsr", document.forms["logForm"]["user"].value);
 	} else {
 		window.alert("La clave o user es incorrecta");
