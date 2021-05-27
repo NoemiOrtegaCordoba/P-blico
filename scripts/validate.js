@@ -2,17 +2,17 @@ function validate() {
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-			miFuncion(this);
+			Funcion(this);
 		}
 	};
 	xhr.open("GET", "https://noemiortegacordoba.github.io/Publico//registrados.xml", true);
 	xhr.send();
 }
 
-function miFuncion(xml) {
+function Funcion(xml) {
 	
-	var xmlDoc = xml.responseXML;
-	var x = xmlDoc.getElementsByTagName("user");
+	var xmlDocument = xml.responseXML;
+	var x = xmlDocument.getElementsByTagName("user");
 	var i;
 	var usrNom;
 	var usrPsw;
@@ -20,7 +20,6 @@ function miFuncion(xml) {
 	var userLog = document.forms["logForm"]["user"].value;
 	var passLog = document.forms["logForm"]["password"].value;
 	
-
 	for (i = 0; i < x.length; i++) {
 		usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
 		usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
@@ -29,12 +28,12 @@ function miFuncion(xml) {
 			estado = true;
 		} 
 	}
+	
 	if (estado == true) {
 		sessionStorage.setItem("nomUsr", document.forms["logForm"]["user"].value);
 	} else {
 		window.alert("La clave o user es incorrecta");
 	}
-
 }
 
 function loadUser() {
