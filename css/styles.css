@@ -343,6 +343,9 @@ textarea{
 	z-index: 1;
 	position: absolute;
 	font-size:50px;
+	  -webkit-text-stroke: 2px black;
+	color: transparent; 
+	text-shadow: 0.1em 0.1em 0.2em white;
 }
 
 @-webkit-keyframes move {

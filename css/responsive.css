@@ -13,13 +13,43 @@
 		grid-column-end:5;
 		padding:10px 10px;
 	}
+	#xd {
+	top: 30%;
+	left: 40%;
+	z-index: 1;
+	position: absolute;
+	font-size:50px;
+	  -webkit-text-stroke: 2px black;
+	color: transparent; 
+	text-shadow: 0.1em 0.1em 0.2em white;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-
+	#xd {
+	top: 25%;
+	left: 30%;
+	z-index: 1;
+	position: absolute;
+	font-size:50px;
+	  -webkit-text-stroke: 2px black;
+	color: transparent; 
+	text-shadow: 0.1em 0.1em 0.2em white;
+	}
 }
 
 @media only screen and (max-width: 576px) {
+	#xd {
+	top: 15%;
+	left: 25%;
+	z-index: 1;
+	position: absolute;
+	font-size:50px;
+	  -webkit-text-stroke: 2px black;
+	color: transparent; 
+	text-shadow: 0.1em 0.1em 0.2em white;
+	}
+	
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 		float: right;
