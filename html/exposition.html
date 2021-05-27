@@ -2,12 +2,13 @@
 <html lang="es">
 	<head>	
 		<!-- META TAGS -->
-		<meta charset="utf-8" />	
+		<meta charset="utf-8"/>	
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>	
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />		
-		<meta name="robots" content="index,follow" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<meta name="description" content="Asociación que lucha contra el antigitanismo y la normalización del pueblo gitano."/>	
+		<meta name="robots" content="index,follow"/>
 		<meta name="copyright" content="Gelem Calé"/>			
-		<meta name="author" content="Noemi_Ortega_Córdoba, noemiortegacordoba@gmail.com"/>	
+		<meta name="author" content="Noemi_Ortega_Córdoba, noemiortegacordoba@gmail.com"/>		
 		
 		<!-- Awesome -->
 		<script src="https://use.fontawesome.com/5d8bca9b76.js"></script>
@@ -26,6 +27,21 @@
 
 	<body onload="cargarUser()">
 		<div class="grid-container">
+			<!-- Colors Start -->
+			<div class="colors">
+				<a href="#" class="original" id="original">
+					Original
+				</a>
+				<a href="#" class="contraste" id="contraste">
+					Contraste
+				</a> 
+				<a href="#" class="noche" id="noche">
+					Noche
+				</a> 
+			</div>
+			<!-- Colors End -->
+			
+			<!-- Nav Start -->
 			<div class="nav">
 				<div class="topnav" id="myTopnav">
 					<a href="#logo"><img src="../images/logo.jpg" alt="Logo Gelem Calé" width="50px" height="50px" disabled></a>
@@ -36,6 +52,7 @@
 					<a href="ken.html">Ken Burns</a>
 					<a href="diagrams.html">Diagramas</a>
 					<a href="certificates.html">Certificados</a>
+					<!-- Login/Logout Start -->
 					<a href="#" disabled>
 						<form id="login" name="miFormulario" onsubmit="return validarXML()">
 							<input type="text" name="usuario" maxlength="10" placeholder="Usuario" required>
@@ -49,12 +66,21 @@
 							<input id="boton" type="button" value="Logout" onclick="borraUsr()">
 						</div>
 					</a>
+					<!-- Login/Logout End -->
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
 				</div>
 			</div>
+			<!-- Nav Start -->
 			
+			<!-- Header Start -->
+			<div class="h">
+				<h1><img src="../images/rueda.png" alt="" width="20px" height="20px"/>GELEM CALÉ<img src="../images/rueda.png" alt="" width="20px" height="20px"/></h1>
+			</div>
+			<!-- Header End -->
+			
+			<!-- Exposition Start -->	
 			<div class="exposition">
 				<div class="container">
 					<div class="mySlides">
@@ -92,16 +118,13 @@
 						<img src="../images/laws.jpg" style="width:100%" height="500px">
 					</div>
 
-					<!-- Next and previous buttons -->
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-					<!-- Image text -->
 					<div class="caption-container">
 						<p id="caption"></p>
 					</div>
 
-					<!-- Thumbnail images -->
 					<div class="row">
 						<div class="column">
 							<img class="demo cursor" src="../images/anthem.jpg" style="width:100%" onclick="currentSlide(1)" alt="Himno">
@@ -127,12 +150,16 @@
 					</div>
 				</div>
 			</div>
+			<!-- Exposition End -->	
 			
+			
+			<!-- Footer Start -->	
 			<div class="footer">
-				<p>Autor: Noemí Ortega Córdoba</p>				
+				<p>Autor: Noemí Ortega Córdoba. <a href="#home">Créditos.</a></p>				
 				<br>
 				<p>&copy; 2021 Gelem Calé. Todos los derechos reservados.</p>				
 			</div>
+			<!-- Footer End -->
 		</div>
 
 		<!-- FILES JS -->
