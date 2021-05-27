@@ -37,7 +37,7 @@ function miFuncion(xml) {
 
 }
 
-function loadUSer() {
+function loadUser() {
 	if (sessionStorage.getItem("nomUsr") !== null) {
 		$("#login").css("display", "none");
 		$("#message").css("display", "initial");
@@ -45,7 +45,7 @@ function loadUSer() {
 	}
 }
 
-function borraUsr() {
+function deleteUser() {
 	sessionStorage.removeItem("nomUsr");
 	$("#login").css("display", "block");
 	$("#message").css("display", "none");
