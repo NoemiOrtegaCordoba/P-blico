@@ -11,8 +11,8 @@ function validate() {
 
 function Funcion(xml) {
 	
-	var xmlDocument = xml.responseXML;
-	var x = xmlDocument.getElementsByTagName("user");
+	var xmlDoc = xml.responseXML;
+	var x = xmlDoc.getElementsByTagName("user");
 	var i;
 	var userName;
 	var userPassword;
@@ -32,7 +32,7 @@ function Funcion(xml) {
 	if (state == true) {
 		sessionStorage.setItem("nomUsr", document.forms["logForm"]["user"].value);
 	} else {
-		window.alert("La clave o user es incorrecta");
+		window.alert("La clave o usuario es incorrecta");
 	}
 }
 
