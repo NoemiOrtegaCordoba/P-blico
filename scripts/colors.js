@@ -7,13 +7,13 @@ $(document).ready(function(){
 		$(".nav a").css({"color": "white"});
 	});
 	
-	$("#contraste").click(function(){
+	$("#contrast").click(function(){
 		$(".exposition, .a, .b, .contact").css({"background-color": "yellow", "color": "black"});
 		$(".nav, .footer").css({"color": "yellow", "background-color": "black"});
 		$(".nav a").css({"color": "yellow"});
 	});
   
-	$("#noche").click(function(){
+	$("#night").click(function(){
 		$(".exposition, .a, .b, .contact").css({"background-color": "#393939", "color": "white"});
 		$(".nav, .footer").css({"color": "white", "background-color": "#333"});
 		$(".nav a").css({"color": "white"});

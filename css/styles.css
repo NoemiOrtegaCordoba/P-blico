@@ -8,7 +8,10 @@
 3. 	Exposition
 4.  Form
 5.	Dolly
-6.  Footer
+6.	Ken
+7.	Login
+8.	Colors
+9.  Footer
 ===========*/
 
 /*===============Start================*/
@@ -262,6 +265,10 @@ a {
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
 }
+
+textarea{
+	width:100%;
+}
 /*--------------------------------------
 		5.  Dolly
 --------------------------------------*/
@@ -323,7 +330,6 @@ a {
   margin-top:10%;
   width: 100%;
   animation: move 40s ease;
-  /* Add infinite to loop. */
   
   -ms-animation: move 40s ease;
   -webkit-animation: move 40s ease;
@@ -333,7 +339,7 @@ a {
 
 #xd {
 	top: 40%;
-	left: 30%;
+	left: 40%;
 	z-index: 1;
 	position: absolute;
 	font-size:50px;
@@ -412,12 +418,12 @@ a {
   color: white;
 }
 
-.noche {
+.night {
   background-image: linear-gradient(to bottom right, white, black);
   color: white;
 }
 
-.contraste {
+.contrast {
    background-image: linear-gradient(to bottom right, yellow , black);
   color: white;
 }
