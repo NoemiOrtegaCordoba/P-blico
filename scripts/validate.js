@@ -40,14 +40,14 @@ function miFuncion(xml) {
 function loadUSer() {
 	if (sessionStorage.getItem("nomUsr") !== null) {
 		$("#login").css("display", "none");
-		$("#mensajeLogin").css("display", "initial");
-		document.getElementById('aqui').innerHTML = sessionStorage.getItem("nomUsr");
+		$("#message").css("display", "initial");
+		document.getElementById('detail').innerHTML = sessionStorage.getItem("nomUsr");
 	}
 }
 
 function borraUsr() {
 	sessionStorage.removeItem("nomUsr");
 	$("#login").css("display", "block");
-	$("#mensajeLogin").css("display", "none");
+	$("#message").css("display", "none");
 }
 
