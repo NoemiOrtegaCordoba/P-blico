@@ -1,4 +1,4 @@
-function validarXML() {
+function validate() {
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -12,13 +12,13 @@ function validarXML() {
 function miFuncion(xml) {
 	
 	var xmlDoc = xml.responseXML;
-	var x = xmlDoc.getElementsByTagName("usuario");
+	var x = xmlDoc.getElementsByTagName("user");
 	var i;
 	var usrNom;
 	var usrPsw;
 	var estado = false;
-	var userLog = document.forms["miFormulario"]["usuario"].value;
-	var passLog = document.forms["miFormulario"]["pass"].value;
+	var userLog = document.forms["logForm"]["user"].value;
+	var passLog = document.forms["logForm"]["password"].value;
 	
 
 	for (i = 0; i < x.length; i++) {
@@ -30,9 +30,9 @@ function miFuncion(xml) {
 		} 
 	}
 	if (estado == true) {
-		sessionStorage.setItem("nomUsr", document.forms["miFormulario"]["usuario"].value);
+		sessionStorage.setItem("nomUsr", document.forms["logForm"]["user"].value);
 	} else {
-		window.alert("La clave o usuario es incorrecta");
+		window.alert("La clave o user es incorrecta");
 	}
 
 }
