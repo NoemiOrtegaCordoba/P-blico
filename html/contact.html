@@ -2,12 +2,13 @@
 <html lang="es">
 	<head>	
 		<!-- META TAGS -->
-		<meta charset="utf-8" />	
+		<meta charset="utf-8"/>	
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>	
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />		
-		<meta name="robots" content="index,follow" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<meta name="description" content="Asociación que lucha contra el antigitanismo y la normalización del pueblo gitano."/>	
+		<meta name="robots" content="index,follow"/>
 		<meta name="copyright" content="Gelem Calé"/>			
-		<meta name="author" content="Noemi_Ortega_Córdoba, noemiortegacordoba@gmail.com"/>	
+		<meta name="author" content="Noemi_Ortega_Córdoba, noemiortegacordoba@gmail.com"/>
 		
 		<!-- Awesome -->
 		<script src="https://use.fontawesome.com/5d8bca9b76.js"></script>
@@ -26,6 +27,7 @@
 
 	<body onload="cargarUser()">
 		<div class="grid-container">
+			<!-- Nav Start -->
 			<div class="nav">
 				<div class="topnav" id="myTopnav">
 					<a href="#logo"><img src="../images/logo.jpg" alt="Logo Gelem Calé" width="50px" height="50px" disabled></a>
@@ -36,6 +38,7 @@
 					<a href="ken.html">Ken Burns</a>
 					<a href="diagrams.html">Diagramas</a>
 					<a href="certificates.html">Certificados</a>
+					<!-- Login/Logout Start -->
 					<a href="#" disabled>
 						<form id="login" name="miFormulario" onsubmit="return validarXML()">
 							<input type="text" name="usuario" maxlength="10" placeholder="Usuario" required>
@@ -49,16 +52,22 @@
 							<input id="boton" type="button" value="Logout" onclick="borraUsr()">
 						</div>
 					</a>
+					<!-- Login/Logout End -->
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
 				</div>
 			</div>
+			<!-- Nav End -->
 			
+			<!-- Divisions Start -->	
+			<!-- Division A Start -->	
 			<div class="a">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6333.763610681269!2d-3.928626038121642!3d37.46351249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6de46e5e0a0941%3A0xb8d02dcefffdac1c!2sAyuntamiento%20de%20Alcal%C3%A1%20la%20Real!5e0!3m2!1ses!2ses!4v1621939402297!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>  
+			<!-- Division A End -->	
 			
+			<!-- Division B Start -->
 			<div class="b">
 				<form action="" class="formulario" id="formulario">
 					<!-- Grupo: Nombre -->
@@ -105,12 +114,16 @@
 					</div>
 				</form>
 			</div> 
+			<!-- Division B End -->	
+			<!-- Divisions End -->
 	
+			<!-- Footer Start -->	
 			<div class="footer">
-				<p>Autor: Noemí Ortega Córdoba</p>				
+				<p>Autor: Noemí Ortega Córdoba. <a href="#home">Créditos.</a></p>				
 				<br>
 				<p>&copy; 2021 Gelem Calé. Todos los derechos reservados.</p>				
 			</div>
+			<!-- Footer End -->	
 		</div>
 		
 		
