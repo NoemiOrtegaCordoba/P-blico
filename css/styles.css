@@ -317,7 +317,6 @@ a {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  background-color:pink;
 }
 
 .image-wrap img {
@@ -333,15 +332,11 @@ a {
 }
 
 #xd {
-	top: 30%;
-	left: 45%;
+	top: 40%;
+	left: 30%;
 	z-index: 1;
 	position: absolute;
-	-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-			transform: scale(1);
-	-webkit-transition: -webkit-transform 1s;
-		transition: transform 1s, filter 1s;
+	font-size:50px;
 }
 
 @-webkit-keyframes move {
