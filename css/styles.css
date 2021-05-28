@@ -40,7 +40,7 @@ a {
     height: 100%;
     position: fixed;
     background-image: linear-gradient(blue, green);
-	z-index: 1100;
+	z-index: 1500;
 }
 
 .loader {
@@ -448,7 +448,7 @@ textarea{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index:10000000000000;
+  z-index:1000;
 }
 
 .colors a {
