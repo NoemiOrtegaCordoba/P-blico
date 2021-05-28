@@ -32,7 +32,7 @@ function miFuncion(xml) {
 	if (estado == true) {
 		sessionStorage.setItem("nomUsr", document.forms["miFormulario"]["usuario"].value);
 	} else {
-		window.alert("La clave o usuario es incorrecta");
+		window.alert("Por favor, revise los datos introducidos.");
 	}
 }
 
