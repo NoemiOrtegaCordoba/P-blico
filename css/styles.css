@@ -46,7 +46,7 @@ a {
 .loader {
 	position: absolute;
 	top: 40%;
-	left:45%;
+	left:40%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
