@@ -1,0 +1,426 @@
+/*======================================
+* Author        : "Noemi_Ortega_Córdoba"
+======================================*/
+
+/*===========TABLE OF CONTENTS==========
+1.  General css
+2. 	Nav
+3. 	Exposition
+4.  Form
+5.	Dolly
+6.	Ken
+7.	Login
+8.	Colors
+9.  Footer
+===========*/
+
+/*===============Start================*/
+
+/*--------------------------------------
+		1.General css
+--------------------------------------*/
+* {
+	font-size:14px;
+	margin:0px;
+	box-sizing:border-box;
+}
+
+h1{
+	font-size:20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------------
+		2. 	Nav
+--------------------------------------*/
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3px 10px;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+/*--------------------------------------
+		3. 	Exposition
+--------------------------------------*/
+.container {
+	margin: 0 auto;
+	position: relative;
+	width:70%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+	float: left;
+	width: 14.28582%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*--------------------------------------
+		4.	Contact
+--------------------------------------*/
+.formulario {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid black;
+	padding: 40px 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	color:black;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+textarea{
+	width:100%;
+}
+/*--------------------------------------
+		5.  Dolly
+--------------------------------------*/
+.dolly {
+  overflow: hidden;
+  position: relative;
+  height: 503px;
+}
+
+.dolly:hover .background {
+  -webkit-transform: scale(0.8) translate(-50%, -50%);
+      -ms-transform: scale(0.8) translate(-50%, -50%);
+          transform: scale(0.8) translate(-50%, -50%);
+}
+
+.dolly:hover .front {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.background {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.front {
+	top: 19%;
+	left:33%;
+	z-index: 1;
+	position: absolute;
+	-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+			transform: scale(1);
+	-webkit-transition: -webkit-transform 1s;
+		transition: transform 1s, filter 1s;
+}
+/*--------------------------------------
+		6.  Ken
+--------------------------------------*/
+.image-wrap {
+  width: 70%;
+  height: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrap img {
+  margin-top:10%;
+  width: 100%;
+  animation: move 40s ease;
+  -ms-animation: move 40s ease;
+  -webkit-animation: move 40s ease;
+  -0-animation: move 40s ease;
+  -moz-animation: move 40s ease;
+}
+
+#xd {
+	top: 40%;
+	left: 25%;
+	z-index: 1;
+	position: absolute;
+	font-size:100px;
+	  -webkit-text-stroke: 2px black;
+	color: transparent; 
+	text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);   
+    -o-transform: scale(1.0);   
+    -moz-transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);    
+    -moz-transform: scale(1.2);
+  }
+}
+/*--------------------------------------
+		7.	Login
+--------------------------------------*/
+#mensajeLogin {
+    display:none;
+}
+/*--------------------------------------
+		8.  Colors
+--------------------------------------*/
+.colors {
+  position: fixed;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:10000000000000;
+}
+
+.colors a {
+	transition: all 0.3s ease;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 3px 10px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+.colors a:hover {
+  background-color: #000;
+}
+
+.original {
+  background-color:black;
+  color: white;
+}
+
+.night {
+  background-image: linear-gradient(to bottom right, white, black);
+  color: white;
+}
+
+.contrast {
+   background-image: linear-gradient(to bottom right, yellow , black);
+  color: white;
+}
+
+/*--------------------------------------v
+		9.  Footer
+--------------------------------------*/
+.footer {
+	color:white;
+}
+/*================End=================*/
+
