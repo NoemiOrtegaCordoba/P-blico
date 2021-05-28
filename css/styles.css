@@ -4,14 +4,15 @@
 
 /*===========TABLE OF CONTENTS==========
 1.  General css
-2. 	Nav
-3. 	Exposition
-4.  Form
-5.	Dolly
-6.	Ken
-7.	Login
-8.	Colors
-9.  Footer
+2.	Loader
+3. 	Nav
+4. 	Exposition
+5.  Form
+6.	Dolly
+7.	Ken
+8.	Login
+9.	Colors
+10.  Footer
 ===========*/
 
 /*===============Start================*/
@@ -33,7 +34,7 @@ a {
   text-decoration: none;
 }
 /*--------------------------------------
-		1.	Loader
+		2.	Loader
 --------------------------------------*/
 #preloader {
     width: 100%;
@@ -99,7 +100,7 @@ a {
   }
 }
 /*--------------------------------------
-		2. 	Nav
+		3. 	Nav
 --------------------------------------*/
 .topnav {
   overflow: hidden;
@@ -118,7 +119,7 @@ a {
   display: none;
 }
 /*--------------------------------------
-		3. 	Exposition
+		4. 	Exposition
 --------------------------------------*/
 .container {
 	margin: 0 auto;
@@ -197,7 +198,7 @@ a {
   opacity: 1;
 }
 /*--------------------------------------
-		4.	Contact
+		5.	Contact
 --------------------------------------*/
 .formulario {
 	background-color: rgba(0, 0, 0, 0.3);
@@ -335,7 +336,7 @@ textarea{
 	width:100%;
 }
 /*--------------------------------------
-		5.  Dolly
+		6.  Dolly
 --------------------------------------*/
 .dolly {
   overflow: hidden;
@@ -381,7 +382,7 @@ textarea{
 		transition: transform 1s, filter 1s;
 }
 /*--------------------------------------
-		6.  Ken
+		7.  Ken
 --------------------------------------*/
 .image-wrap {
   width: 70%;
@@ -434,13 +435,13 @@ textarea{
   }
 }
 /*--------------------------------------
-		7.	Login
+		8.	Login
 --------------------------------------*/
 #mensajeLogin {
     display:none;
 }
 /*--------------------------------------
-		8.  Colors
+		9.  Colors
 --------------------------------------*/
 .colors {
   position: fixed;
@@ -482,7 +483,7 @@ textarea{
 }
 
 /*--------------------------------------v
-		9.  Footer
+		10.  Footer
 --------------------------------------*/
 .footer {
 	color:white;
