@@ -272,19 +272,19 @@ textarea{
 /*--------------------------------------
 		5.  Dolly
 --------------------------------------*/
-.cont {
+.dolly {
   overflow: hidden;
   position: relative;
   height: 503px;
 }
 
-.cont:hover .background {
+.dolly:hover .background {
   -webkit-transform: scale(0.8) translate(-50%, -50%);
       -ms-transform: scale(0.8) translate(-50%, -50%);
           transform: scale(0.8) translate(-50%, -50%);
 }
 
-.cont:hover .front {
+.dolly:hover .front {
   -webkit-transform: scale(1.4);
       -ms-transform: scale(1.4);
           transform: scale(1.4);
@@ -330,7 +330,6 @@ textarea{
   margin-top:10%;
   width: 100%;
   animation: move 40s ease;
-  
   -ms-animation: move 40s ease;
   -webkit-animation: move 40s ease;
   -0-animation: move 40s ease;
@@ -357,30 +356,16 @@ textarea{
     transform-origin: bottom left;
     transform: scale(1.0);
     -ms-transform: scale(1.0);
-    /* IE 9 */
-    
-    -webkit-transform: scale(1.0);
-    /* Safari and Chrome */
-    
-    -o-transform: scale(1.0);
-    /* Opera */
-    
+    -webkit-transform: scale(1.0);   
+    -o-transform: scale(1.0);   
     -moz-transform: scale(1.0);
-    /* Firefox */
   }
   100% {
     transform: scale(1.2);
     -ms-transform: scale(1.2);
-    /* IE 9 */
-    
     -webkit-transform: scale(1.2);
-    /* Safari and Chrome */
-    
-    -o-transform: scale(1.2);
-    /* Opera */
-    
+    -o-transform: scale(1.2);    
     -moz-transform: scale(1.2);
-    /* Firefox */
   }
 }
 /*--------------------------------------
